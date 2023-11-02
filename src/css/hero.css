@@ -1,6 +1,16 @@
 /*---------------------------- Section 1 hero ----------------------------*/
-.hero {
+.hero-arrow {
+  /* display: none; */
 }
+
+
+
+
+
+
+
+
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
