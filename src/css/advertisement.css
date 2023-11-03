@@ -1,11 +1,70 @@
 /*---------------------------- Section 2 advertisement ----------------------------*/
 .advertisement {
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.container {
+}
+
+.advertisement-marquee {
+  overflow: hidden;
+  background-color: inherit;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.marquee__inner {
+  display: flex;
+}
+
+.advertisement-title {
+  color: #bea69e;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  margin: 0;
+  padding-right: 28px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.advertisement-title-span {
+  color: #fff;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    /* padding: 0 32px; */
+  }
+
+  .advertisement-marquee {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .advertisement-title {
+    font-size: 40px;
+    line-height: 1.25;
+    padding-right: 40px;
   }
 }
 
@@ -13,6 +72,12 @@
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 0 100px;
+    /* padding: 0 100px; */
+  }
+
+  .advertisement-title {
+    font-size: 59px;
+    line-height: 1.08;
+    padding-right: 59px;
   }
 }
