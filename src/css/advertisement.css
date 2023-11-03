@@ -1,16 +1,13 @@
 /*---------------------------- Section 2 advertisement ----------------------------*/
 .advertisement {
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .advertisement-marquee {
   overflow: hidden;
   background-color: inherit;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .marquee__inner {
@@ -51,12 +48,7 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    /* padding: 0 32px; */
-  }
-
-  .advertisement-marquee {
+  .advertisement {
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -70,11 +62,6 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    /* padding: 0 100px; */
-  }
-
   .advertisement-title {
     font-size: 59px;
     line-height: 1.08;
