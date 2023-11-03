@@ -1,6 +1,19 @@
 /*---------------------------- Section 3 about ----------------------------*/
 .about {
+
+    .container {}
+  
+    .about-h2 {}
+  
+    .about-h2-span {}
+  
+    .about-img {}
+  
+    .about-text1 {}
+  
+    .about-text2 {}
 }
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
