@@ -1,6 +1,214 @@
 /*---------------------------- Footer ----------------------------*/
+
 .footer {
+
+
+  background-color: #121212;
+  border-top:stroke;
+  stroke-width:10px;
+  width:100%;
+  
+
+
+
 }
+
+.footer > .footer-container{
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px 20px 20px;
+
+
+}
+
+
+
+.footer-frame-section{
+
+  
+  gap:16px;
+
+
+}
+
+.footer-logo-svg{
+
+ 
+  fill:white;
+  margin-bottom: 16px;
+
+
+}
+
+
+.footer-address{
+
+  display: flex;
+  flex-direction: column;
+  gap:auto;
+  margin-bottom: 40px;
+
+}
+
+.footer-phone-contacts{
+
+
+  color: #FFF;
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  text-transform: uppercase;
+
+
+}
+
+.footer-country{
+
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+
+
+.footer-nav-section{
+
+  
+ display: flex;
+ flex-direction: inline-flex;
+ gap:40px;
+ 
+ margin-bottom:75px;
+
+
+}
+
+.footer-soc-list{
+
+
+  gap:14px;
+
+
+}
+
+.footer-menu-list{
+
+
+  gap:14px;
+
+
+}
+
+.footer-soc-name{
+
+
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+
+}
+
+.footer-soc-name:hover,
+.footer-soc-name:focus{
+
+
+  color:#BEA69E;
+
+}
+
+.footer-form{
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+
+}
+
+
+
+.footer-input{
+
+  width:267px;
+  height:68px;
+  border-radius:12px;
+
+
+}
+
+.footer-input::placeholder{
+
+ 
+  padding-left:16px;
+  
+
+}
+
+.footer-form-button{
+
+  align-items: center;
+  width:60px;
+  height:60px;
+  background-color: #1d1d1d;
+  color:#FFF;
+  border-radius:12px;
+
+
+}
+
+
+.footer-last-part{
+
+  display:flex;
+  flex-direction: inline-flex;
+  align-items:center;
+  margin:auto;
+
+}
+
+
+
+.footer-agreement-text{
+
+
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+.footer-rights-text{
+
+  width: 116px;
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+
+
+
+
+
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
