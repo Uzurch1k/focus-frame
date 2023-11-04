@@ -141,6 +141,11 @@
     padding: 0 32px;
   }
 
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
   .hero-wrap {
     padding: 64px 32px 0 32px;
   }
@@ -199,6 +204,11 @@
     padding: 0 100px;
   }
 
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
   .hero-wrap {
     padding: 80px 50px 50px 50px;
   }
@@ -228,4 +238,10 @@
   .hero-students-review-wrap {
     margin-bottom: 0;
   }
+}
+
+/*---------------------------- Adaptive desktop 1440px ----------------------------*/
+
+@media screen and (min-width: 1440px) {
+  
 }
