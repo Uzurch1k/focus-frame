@@ -55,12 +55,16 @@ width: 32px;
   margin-left: 14px;
   display: flex;
   margin-right: 20px;
-  
+  padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
   
 }
 
 .header-btn-menu-item {
-  fill: #FFF;
+ stroke: #FFF;
   
 }
 
@@ -119,9 +123,17 @@ width: 32px;
   margin-left: 166px;
   margin-right: 20px;
   margin-top: 20px;
+  padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    flex-shrink: 0;
+    
 }
 .header-btn-esc-item{
-  fill: rgba(18, 18, 18, 1);
+  stroke: rgba(18, 18, 18, 1);
 }
 .header-nav-menu{
   display: flex;
@@ -142,6 +154,8 @@ width: 32px;
 .header-nav-link-mob:focus{
   font-weight: 700;
 }
+
+
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
@@ -167,24 +181,46 @@ width: 32px;
   }
 
   .header-btn {
-display: inline-flex;
-  padding: 16px 58px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-    background: #FFF;
+  color: #121212;
+  font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: uppercase;
+    border-radius: 12px;
     border: none;
-    color: #121212;
-     font-family: DM Sans;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1.55;
-      text-transform: uppercase;
+      background: #FFF;
+      display: block;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
   }
+
   .header-camera{
     display: none;
   }
+}
+.header-menu-item{
+  width: 480px;
+  height: 1024px;
+    flex-shrink: 0;
+}
+.header-btn-esc{
+  margin-left: 408px;
+}
+.header-menu-nav{
+  margin-top: 232px;
+  margin-left: 64px;
+}
+.header-nav-list-mob{
+  gap: 28px;
+}
+.header-img-menu{
+  background-size: cover;
+}
+.header-btn-menu{
+  margin-right: 301px;
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
