@@ -29,5 +29,14 @@
 			<path d="M208.808 29.997h-5.737v-13.463c0-2.665-1.4-4.563-3.479-4.563-2.168 0-3.75 2.033-3.75 4.744v13.282h-5.873v-13.372c0-3.569-0.949-4.472-3.524-4.472-2.349 0-3.569 1.446-3.569 4.337v13.508h-5.873v-22.227h5.512v3.253c1.491-2.936 3.569-3.84 6.506-3.84 3.027 0 4.472 0.949 6.189 3.524 1.22-2.44 3.208-3.524 6.008-3.524 4.472 0 7.59 3.253 7.59 7.409v15.405z"></path>
 			<path d="M216.619 16.715h9.080c-0.090-3.298-2.259-4.879-4.563-4.879-2.349 0-4.292 1.807-4.518 4.879zM231.753 20.42h-15.315c0.181 3.343 2.078 5.512 4.969 5.512 1.897 0 3.569-0.949 3.976-2.485h6.054c-1.355 4.563-5.015 7.138-9.758 7.138-7.409 0-11.113-4.066-11.113-12.107 0-6.867 3.93-11.294 10.752-11.294s10.436 4.427 10.436 13.237z"></path>
 		</symbol>
+		<symbol id="icon-menu-close" viewBox="0 0 32 32">
+			<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M24 8l-16 16"></path>
+			<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 8l16 16"></path>
+		</symbol>
+		<symbol id="icon-menu-open" viewBox="0 0 47 32">
+			<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8.538 5.333h36.553"></path>
+			<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8.538 24.727h36.553"></path>
+			<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M19.668 15.030h25.423"></path>
+		</symbol>
   </defs>
 </svg>
