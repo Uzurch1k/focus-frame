@@ -1,6 +1,41 @@
 /*---------------------------- Header ----------------------------*/
 .header {
   
+  
+}
+.header-item{
+  width: 335px;
+    height: 50px;
+    flex-shrink: 0;
+  border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: #121212;
+}
+.header-icon-logo{
+  fill: #fff;
+}
+.header-nav{
+  display: none;
+}
+.header-btn-menu{
+  background-color: transparent;
+    border: none;
+    margin: auto;
+}
+.header-btn-menu-item{
+  background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.header-camera{
+  width: 100%;
+    height: 100%;
+    background-color: #1D1D1D;
+    border-radius: 50%;
 }
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
