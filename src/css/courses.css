@@ -1,6 +1,23 @@
 /*---------------------------- Section 4 courses ----------------------------*/
-.courses {
+.courses {}
+
+.title-courses {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.07em;
+  margin-bottom: 20px;
 }
+
+.title-courses span {
+  color: #BEA69E;
+}
+
+.courses-desc {
+  margin-bottom: 40px;
+
+}
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
