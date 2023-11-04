@@ -1,11 +1,131 @@
 /*---------------------------- Section 7 reviews ----------------------------*/
 .reviews {
+  background: #121212;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
+
+.reviews-header {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -1.92px;
+  padding-bottom: 40px;
+}
+
+.reviews-student-name {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.reviews-menu-list {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  /* width: calc((100% - 20px) / 2); */
+}
+
+.reviews-student {
+  color: rgba(255, 255, 255, 0.50);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+}
+
+.reviews-student-card {
+  padding: 20px 20px;
+}
+
+.reviews-foto-name {
+  padding-bottom: 0;
+  display: flex;
+
+}
+
+.reviews-foto {
+  border-radius: 50%;
+}
+
+.reviews-name-and-student {
+  /* display: table-column;
+  gap: 4px; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+
+.reviews-icons {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+  padding-left: 65px;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+.reviews-icons-star {
+  /* color: #BEA69E; */
+  fill: #BEA69E;
+
+}
+.reviews-icons-star-white {
+  fill: #BEA69E;
+  opacity: 0.2;
+}
+
+.reviews-text {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.32px;
+}
+
+.two {
+  display: none;
+}
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
+  }
+
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-header {
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+.reviews-menu {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.reviews-foto-name {
+  padding-bottom: 20px;
+  display: flex;
+
+}
+  .two {
+    display: none;
+  }
+
+  .reviews-foto-and-stars {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -15,4 +135,47 @@
     max-width: 1280px;
     padding: 0 100px;
   }
+
+  .reviews {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .reviews-foto-name {
+    padding-bottom: 20px;
+    display: flex;
+  
+  }
+  .reviews-header {
+    padding-bottom: 50px;
+  }
+  .reviews-menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .two {
+    display: block;
+  }
+
+  .reviews-name-and-student {
+    display: table-column;
+    gap: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+  }
+
+  .reviews-menu {
+    display: flex;
+    gap: 20px;
+  }
+  .reviews-menu-list {
+    width: calc((100% - 20px) / 2);
+  }
+  .reviews-foto-and-stars {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 }
