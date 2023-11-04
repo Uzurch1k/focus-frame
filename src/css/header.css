@@ -1,7 +1,6 @@
 /*---------------------------- Header ----------------------------*/
 .header {
   
-  
 }
 .header-item{
   width: 335px;
@@ -13,9 +12,12 @@
 }
 .header-icon-logo{
   fill: #fff;
+  width: 127px;
+    height: 20px;
+    flex-shrink: 0;
 }
 .header-nav{
-
+display: none;
 }
 .header-nav-list{
   color: #FFF;
@@ -26,20 +28,7 @@
     text-transform: uppercase;
 }
 .header-btn{
-  color: #121212;
-  
-    font-family: DM Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.55;
-    text-transform: uppercase;
-  border-radius: 12px;
-    background: #FFF;
-    display: inline-flex;
-      padding: 16px 84px;
-      justify-content: center;
-      align-items: center;
+ display: none;
 }
 .header-btn-menu{
   background-color: transparent;
@@ -67,6 +56,32 @@
     max-width: 768px;
     padding: 0 32px;
   }
+  .header-item{
+    width: 504px;
+      height: 60px;
+      flex-shrink: 0;
+  }
+  .header-icon-logo{
+    width: 123px;
+      height: 16px;
+      flex-shrink: 0;
+  }
+  .header-btn{
+    display: inline-flex;
+      padding: 16px 58px;
+      justify-content: center;
+      align-items: center;
+      color: #121212;
+      font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.55;
+        /* 155.556% */
+        text-transform: uppercase;
+        border-radius: 12px;
+          background: #FFF;
+  }
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
@@ -75,4 +90,16 @@
     max-width: 1280px;
     padding: 0 100px;
   }
+  .header-item{
+    width: 822px;
+      height: 60px;
+      flex-shrink: 0;
+  }
+  .header-nav{
+    display: block;
+  }
+.header-btn{
+    padding: 16px 84px;
+   
+}
 }
