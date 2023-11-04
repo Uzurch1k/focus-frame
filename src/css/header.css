@@ -15,7 +15,31 @@
   fill: #fff;
 }
 .header-nav{
-  display: none;
+
+}
+.header-nav-list{
+  color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.header-btn{
+  color: #121212;
+  
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: uppercase;
+  border-radius: 12px;
+    background: #FFF;
+    display: inline-flex;
+      padding: 16px 84px;
+      justify-content: center;
+      align-items: center;
 }
 .header-btn-menu{
   background-color: transparent;
