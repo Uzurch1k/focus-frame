@@ -1,5 +1,7 @@
 /*---------------------------- Section 4 courses ----------------------------*/
-.courses {}
+.courses {
+  padding-top: 80px;
+}
 
 .title-courses {
   font-size: 28px;
@@ -44,6 +46,8 @@
 .courses-icon {
   fill: #777777;
 }
+
+
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
