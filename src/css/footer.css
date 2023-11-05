@@ -5,13 +5,25 @@
 
   background-color: #121212;
   border-top: 1px solid rgba(255, 255, 255, 0.20);
-  padding: 40px 20px 20px 20px;
 
+
+
+  width: 100%; /* Set the width as needed */
+  height: 100%; /* Set the height as needed */
+  position: center; /* Make the section a positioning context */
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 0px, transparent 1px, transparent 256.81px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 0px, transparent 1px, transparent 256.81px);
+  background-size: 100% 178.74, 100% 99; /* Add horizontal and vertical lines */
+  background-position: 0 0, 0 0; /* Adjust the starting position if needed */
+  /* Prevent repeating */
+  color: #000; /* Set the text color to make it visible on the lines */
+  padding: 20px;
+  border-image: repeating-linear-gradient(0deg, transparent 0, transparent 1px, rgba(255, 255, 255, 0.2) 1px, rgba(255, 255, 255, 0.2) 257px) 1;
   
 
 
+  
 
-}
+ }
 
 
 
@@ -29,7 +41,9 @@
   
   display: flex;
   flex-direction: column;
-  justify-content: center;
+ padding: 40px 20px 20px;
+
+
   
 
 
@@ -39,7 +53,17 @@
 
  
   fill:white;
+  
+
+
+}
+
+.footer-logo{
+
+
   margin-bottom: 16px;
+  
+
 
 
 }
@@ -50,7 +74,7 @@
   font-style: normal;
   display: flex;
   flex-direction: column;
-  gap:auto;
+  gap:8px;
   margin-bottom: 40px;
 
 }
@@ -79,6 +103,7 @@
 
   font-size: 14px;
   line-height: 1.28; 
+  color: #fff;
 
 }
 
@@ -97,7 +122,8 @@
 
 .footer-soc-list{
 
-
+  display: flex;
+  flex-direction: column;
   gap:14px;
 
 
@@ -105,7 +131,8 @@
 
 .footer-menu-list{
 
-
+  display: flex;
+  flex-direction: column;
   gap:14px;
 
 
@@ -158,13 +185,14 @@
 
  
   padding-left:16px;
+  position: absolute;
   
 
 }
 
 .footer-form-button{
 
-  align-items: center;
+  position: relative;
   width:60px;
   height:60px;
   background-color: #1d1d1d;
@@ -197,6 +225,8 @@
   line-height: 16px; /* 133.333% */
 }
 
+
+
 .footer-rights-text{
 
   width: 116px;
@@ -220,6 +250,12 @@
     max-width: 768px;
     padding: 0 32px;
   }
+
+
+
+
+
+ 
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
