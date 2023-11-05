@@ -34,22 +34,26 @@
   .about {
     padding: 100px 0px;
   }
+
   .about-h2 {
     font-size: 48px;
     font-weight: 500;
     line-height: 1.13;
     margin-bottom: 50px;
   }
+
   .about-wrap-desktop {
     gap: 50px;
   }
   .about-img {
   }
+
   .about-text-wrap {
     display: flex;
     flex-direction: row;
     gap: 40px;
   }
+
   .about-text {
     font-size: 16px;
     line-height: 1.25;
@@ -61,22 +65,28 @@
   .about {
     padding: 150px 0px;
   }
+
   .about-wrap-desktop {
     flex-direction: row;
     gap: 0;
     align-items: center;
     justify-content: space-between;
   }
+
   .about-text-wrap {
     gap: 20px;
   }
+
   .about-img {
   }
+
   .about-text {
   }
+
   .about-text:first-child {
     width: 268px;
   }
+
   .about-text:last-child {
     width: 264px;
   }
@@ -85,14 +95,18 @@
 @media screen and (min-width: 1440px) {
   .about-wrap-desktop {
   }
+
   .about-img {
   }
+
   .about-text-wrap {
     gap: 40px;
   }
+
   .about-text:first-child {
     width: 314px;
   }
+
   .about-text:last-child {
     width: 276px;
   }
