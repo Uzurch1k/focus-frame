@@ -3,7 +3,7 @@
   padding-top: 80px;
 }
 
-.title-courses {
+.courses-title {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-.title-courses span {
+.courses-title span {
   color: #BEA69E;
 }
 
@@ -25,17 +25,17 @@
   background: linear-gradient(180deg, #060707 0%, #1D1D1D 100%);
 }
 
-.course-card {
+.courses-number-wrap {
   padding: 28px;
 }
 
-.item-name {
+.course-name {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
 }
 
-.item-descr {
+.course-descr {
   color: rgba(255, 255, 255, 0.50);
   font-size: 14px;
   font-weight: 400;
