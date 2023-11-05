@@ -274,3 +274,12 @@
 
 /*---------------------------- Adaptive desktop 1440px ----------------------------*/
 
+@media screen and (min-width: 1440px) {
+  .hero-wrap {
+    padding: 80px 100px 50px 50px;
+  }
+
+  .hero-photographer-picture {
+    right: 100px;
+  }
+}
