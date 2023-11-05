@@ -37,7 +37,7 @@
 }
 
 .hero-students-list {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   position: relative;
   width: 110px;
 }
@@ -74,11 +74,19 @@
   display: flex; 
   gap: 6px;    
   align-items: center;
+  transition: transform 250ms ease;
 }
 
 .hero-students-icon {
   fill: #ffffff;
+  transition: transform 150ms ease;
 }
+
+.hero-students-link:hover .hero-students-icon,
+.hero-students-link:focus .hero-students-icon,
+.hero-students-link:active .hero-students-icon {
+  transform: rotate(90deg);
+} 
 
 .hero-students-review-wrap {
   display: flex;
@@ -91,6 +99,12 @@
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.hero-review-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .hero-review-icon-container {
@@ -136,11 +150,6 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 600px;
-    padding: 0 32px;
-  }
-
   .hero {
     padding-top: 40px;
     padding-bottom: 100px;
@@ -175,15 +184,43 @@
     gap: 12px;
   }
 
+  .hero-students-list {
+    width: 137px;
+  }
+
+  .hero-students-item {
+    width: 54px;
+    height: 54px;
+  }
+
+  .hero-students-item:nth-child(2) {
+    left: 40px;
+  }
+  
+  .hero-students-item:nth-child(3) {
+    left: 80px;
+  }
+
   .hero-students-link {
     flex-direction: column;
     align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-students-link .hero-students-icon {
+    align-self: center;
   }
 
   .hero-review-subtitle {
     font-size: 16px;
     line-height: 1.25; 
     letter-spacing: -0.04em;
+  }
+
+  .hero-review-icon-container {
+    width: 50px;
+    height: 50px;
   }
 
   .hero-review-number {
@@ -199,11 +236,6 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
-
   .hero {
     padding-top: 80px;
     padding-bottom: 150px;
@@ -242,9 +274,3 @@
 
 /*---------------------------- Adaptive desktop 1440px ----------------------------*/
 
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    background-color: rgb(108, 255, 71);
-  }
-}
