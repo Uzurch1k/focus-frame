@@ -1,18 +1,191 @@
 /*---------------------------- Section 6 sign ----------------------------*/
 .sign {
+  padding: 80px 0px;
 }
+
+.sign-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -1.12px;
+
+  margin-bottom: 20px;
+}
+
+.sign-title span {
+  color: #bea69e;
+}
+
+.sign-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.018em;
+
+  max-width: 295px;
+  margin-bottom: 40px;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.sign-input-wrap input {
+  background-color: transparent;
+  width: 100%;
+  height: 46px;
+  padding-left: 18px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: transparent;
+
+  color: #fff;
+  font-size: 14px;
+}
+
+.sign-input-wrap input:hover,
+.sign-input-wrap input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sign-input-wrap input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sign-input-wrap textarea {
+  background-color: transparent;
+  padding: 14px 18px;
+  resize: none;
+  width: 100%;
+  height: 112px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: transparent;
+
+  color: #fff;
+  font-size: 14px;
+}
+
+.sign-input-wrap textarea::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sign-button {
+  width: 100%;
+  height: 48px;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background: #fff;
+
+  color: #121212;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.sign-button:hover,
+.sign-button:focus {
+  background-color: #1d1d1d;
+  color: #bea69e;
+}
+
+.sign-policy-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.sign-link {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration-line: underline;
+  display: inline-block;
+  letter-spacing: -0.018em;
+}
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
+  .sign {
+    padding: 100px 0px;
+  }
+
+
+  .sign-wrap {
+    width: 480px;
+  }
+
+  .sign-title {
+    font-size: 48px;
+    line-height: 1.12;
+    letter-spacing: -1.92px;
+  }
+
+  .sign-desc {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+
+    max-width: 480px;
+  }
+
+  .sign-input-wrap {
+    gap: 14px;
+  }
+
+  .sign-input-wrap input {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .sign-input-wrap input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .sign-input-wrap textarea {
+    padding: 20px 18px;
+    height: 119px;
+    font-size: 16px;
+  }
+
+  .sign-input-wrap textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .sign-button {
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .sign-policy-text {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
 }

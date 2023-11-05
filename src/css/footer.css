@@ -4,25 +4,28 @@
 
 
   background-color: #121212;
-  border-top:stroke;
-  stroke-width:10px;
-  width:100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  padding:0;
+
+
+
+  width: 100%; /* Set the width as needed */
+  height: 100%; /* Set the height as needed */
+  position: center; /* Make the section a positioning context */
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 0px, transparent 1px, transparent 256.81px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 0px, transparent 1px, transparent 256.81px);
+  background-size: 100% 178.74, 100% 99; /* Add horizontal and vertical lines */
+  background-position: 0 0, 0 0; /* Adjust the starting position if needed */
+  /* Prevent repeating */
+  color: #000; /* Set the text color to make it visible on the lines */
+  padding: 20px;
+  border-image: repeating-linear-gradient(0deg, transparent 0, transparent 1px, rgba(255, 255, 255, 0.2) 1px, rgba(255, 255, 255, 0.2) 257px) 1;
   
 
 
-
-}
-
-.footer > .footer-container{
-
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px 20px 20px 20px;
-
 
 }
+
 
 
 
@@ -34,11 +37,35 @@
 
 }
 
+
+.footer > .container{
+
+  
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px;
+
+
+  
+
+
+}
+
 .footer-logo-svg{
 
  
   fill:white;
+  
+
+
+}
+
+.footer-logo{
+
+
   margin-bottom: 16px;
+  
+
 
 
 }
@@ -46,54 +73,59 @@
 
 .footer-address{
 
+  font-style: normal;
   display: flex;
   flex-direction: column;
-  gap:auto;
+  gap:8px;
   margin-bottom: 40px;
 
 }
 
 .footer-phone-contacts{
-
-
   color: #FFF;
-
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28; 
   text-transform: uppercase;
+ 
 
 
 }
 
+.footer-phone-contacts:hover,
+.footer-phone-contacts:focus{
+
+   
+  color:#BEA69E;
+
+
+}
+
+
 .footer-country{
 
-  color: #FFF;
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28; 
+  color: #fff;
+
 }
 
 
 .footer-nav-section{
 
   
- display: flex;
- flex-direction: inline-flex;
- gap:40px;
+  display: flex;
+  flex-direction: inline-flex;
+  gap:40px;
  
- margin-bottom:75px;
+  margin-bottom:75px;
 
 
 }
 
 .footer-soc-list{
 
-
+  display: flex;
+  flex-direction: column;
   gap:14px;
 
 
@@ -101,7 +133,8 @@
 
 .footer-menu-list{
 
-
+  display: flex;
+  flex-direction: column;
   gap:14px;
 
 
@@ -111,7 +144,7 @@
 
 
   color: #FFF;
-  font-family: DM Sans;
+ 
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -145,6 +178,7 @@
   width:267px;
   height:68px;
   border-radius:12px;
+  
 
 
 }
@@ -153,13 +187,14 @@
 
  
   padding-left:16px;
+  position: absolute;
   
 
 }
 
 .footer-form-button{
 
-  align-items: center;
+  position: relative;
   width:60px;
   height:60px;
   background-color: #1d1d1d;
@@ -173,9 +208,9 @@
 .footer-last-part{
 
   display:flex;
-  flex-direction: inline-flex;
+  justify-content: space-between;
   align-items:center;
-  margin:auto;
+
 
 }
 
@@ -185,18 +220,20 @@
 
 
   color: #FFF;
-  font-family: DM Sans;
+  
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 133.333% */
 }
 
+
+
 .footer-rights-text{
 
   width: 116px;
   color: #FFF;
-  font-family: DM Sans;
+ 
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -211,16 +248,110 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
+
+
+  
+  .footer > .container {
+
+   display:flex;
+   flex-direction: row;
+   flex-wrap:wrap;
+   justify-content:start;
+   padding: 50px 32px 20px 32px;
+
+
   }
+
+  .footer-frame-section,
+  .footer-nav-section,
+  .footer-form-container {
+   
+    top:0;
+    right:0;
+    flex: 1; 
+    width:100%;
+    height:100%;
+    
+
+  }  
+
+  
+ 
+
+  .footer-input{
+
+    width:216px;
+    height:68px;
+    border-radius:12px;
+    
+  
+  
+  }
+
+
+  .footer-last-part {
+
+    flex: 1;
+    padding-bottom: 25px;
+    
+  }
+
+  
+
+
+
+
+ 
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
+
+  
+
+  .footer > .container {
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:start;
+    padding: 50px 32px 20px 32px;
+ 
+ 
   }
+ 
+  .footer-frame-section,
+  .footer-nav-section,
+  .footer-form-container {
+    
+    top:0;
+    right:0;
+    flex: 1; 
+    width:100%;
+    height:100%;
+     
+ 
+   }  
+ 
+   
+  
+ 
+   .footer-input{
+ 
+     width:216px;
+     height:68px;
+     border-radius:12px;
+     
+   
+   
+   }
+ 
+ 
+   .footer-last-part {
+ 
+    flex: 1;
+    padding-bottom: 25px;
+     
+   }
+
 }
