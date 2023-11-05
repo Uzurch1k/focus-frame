@@ -89,9 +89,12 @@ width: 32px;
 .header-camera-item:focus{
   fill: rgba(190, 166, 158, 1);
 }
-/*-------------------------menu---------------------------*/
+
+
+/*---------------------------menu----------------------------*/
+
 .header-menu {
- position: fixed;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: rgba(18, 18, 18, 0.40);
@@ -123,6 +126,8 @@ width: 32px;
       background-position: bottom;
       z-index: 5;
       
+
+
 }
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -135,6 +140,7 @@ width: 32px;
 .header-btn-esc{
   padding: 0;
   display: flex;
+
     justify-content: center;
     background-color: transparent;
     cursor: pointer;
@@ -144,6 +150,16 @@ width: 32px;
     margin-top: 20px;
     margin-right: 20px;
    
+
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+
 }
 .header-btn-esc-item{
   stroke: rgba(18, 18, 18, 1);
@@ -229,6 +245,7 @@ width: 32px;
   .header-camera{
     display: none;
   }
+
 .header-menu-item{
 width: 480px;
   height: 1024px;
@@ -260,6 +277,32 @@ width: 480px;
   background-size: cover;
 }
 
+  .header-menu-item{
+    width: 480px;
+    height: 1024px;
+  }
+  .header-btn-esc{
+    margin-right: 32px;
+    width: 40px;
+    height: 40px;
+  }
+  .header-nav-menu{
+    margin-top: 232px;
+    margin-left: 64px;
+
+  }
+  .header-img-menu{
+    width: 476px;
+      height: 480px;
+  }
+  
+
+}
+
+
+
+
+
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
@@ -267,7 +310,6 @@ width: 480px;
   .container {
     max-width: 1280px;
     padding: 0 100px;
-
   }
 
   .header-container{
@@ -326,5 +368,5 @@ display: inline-flex;
   }
 }
 
-}
+
 
