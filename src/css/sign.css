@@ -7,7 +7,7 @@
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -0.07em;
+  letter-spacing: -1.12px;
 
   margin-bottom: 20px;
 }
@@ -126,16 +126,66 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
+  .sign {
+    padding: 100px 0px;
+  }
+
+
+  .sign-wrap {
+    width: 480px;
+  }
+
+  .sign-title {
+    font-size: 48px;
+    line-height: 1.12;
+    letter-spacing: -1.92px;
+  }
+
+  .sign-desc {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+
+    max-width: 480px;
+  }
+
+  .sign-input-wrap {
+    gap: 14px;
+  }
+
+  .sign-input-wrap input {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .sign-input-wrap input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .sign-input-wrap textarea {
+    padding: 20px 18px;
+    height: 119px;
+    font-size: 16px;
+  }
+
+  .sign-input-wrap textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .sign-button {
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .sign-policy-text {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
 }
