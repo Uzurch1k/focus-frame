@@ -74,12 +74,11 @@
   display: flex;
   gap: 6px;
   align-items: center;
-  transition: transform 250ms ease;
 }
 
 .hero-students-icon {
   fill: #ffffff;
-  transition: transform 150ms ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-students-link:hover .hero-students-icon,
@@ -206,10 +205,6 @@
     align-items: flex-start;
     font-size: 16px;
     line-height: 1.25;
-  }
-
-  .hero-students-link .hero-students-icon {
-    align-self: center;
   }
 
   .hero-review-subtitle {
