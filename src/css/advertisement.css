@@ -28,8 +28,8 @@
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
