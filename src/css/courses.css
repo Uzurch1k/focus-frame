@@ -127,6 +127,6 @@
   }
 
   .courses-text {
-    width: 565px;
+    max-width: 565px;
   }
 }
