@@ -1,13 +1,13 @@
 /*---------------------------- Section 6 sign ----------------------------*/
 .sign {
-  padding: 80px 0px;
+  padding: 0px 0px 80px;
 }
 
 .sign-title {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -1.12px;
+  letter-spacing: -0.04em;
 
   margin-bottom: 20px;
 }
@@ -20,7 +20,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
-  letter-spacing: -0.018em;
+  letter-spacing: -0.02em;
 
   max-width: 295px;
   margin-bottom: 40px;
@@ -86,6 +86,11 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.sign-input-wrap textarea:hover,
+.sign-input-wrap textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .sign-button {
   width: 100%;
   height: 48px;
@@ -124,12 +129,15 @@
   letter-spacing: -0.018em;
 }
 
+.sign-img {
+  display: none;
+}
+
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .sign {
-    padding: 100px 0px;
+    padding: 0px 0px 100px;
   }
-
 
   .sign-wrap {
     width: 480px;
@@ -138,13 +146,11 @@
   .sign-title {
     font-size: 48px;
     line-height: 1.12;
-    letter-spacing: -1.92px;
   }
 
   .sign-desc {
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: -0.02em;
 
     max-width: 480px;
   }
@@ -188,4 +194,47 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
+  .sign > .container {
+    display: flex;
+    gap: 60px;
+  }
+
+  .sign-img {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+  }
+
+  .lens-img-wrap {
+    background-color: #bea69e;
+    border-radius: 1000px;
+    width: 180px;
+    height: 288px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .lens-img-wrap img {
+    position: absolute;
+    top: 76px;
+    right: 19px;
+  }
+
+  .camera-img-wrap {
+    background-color: #1d1d1d;
+    border-radius: 1000px;
+    width: 340px;
+    height: 540px;
+    position: relative;
+  }
+
+  .camera-img-wrap img {
+    position: absolute;
+    top: 156px;
+    right: 50px;
+  }
+}
+
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+@media screen and (min-width: 1440px) {
 }
