@@ -11,16 +11,16 @@
   background: repeating-linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2) 1px,
+      rgba(255, 255, 255, 0.2) 2px,
       transparent 1px,
-      transparent 256.81px
+      transparent 256px
     ),
     repeating-linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2) 1px,
+      rgba(255, 255, 255, 0.2) 2px,
       transparent 1px,
-      transparent 256.81px
+      transparent 256px
     );
   background-size:
     100% 178px,
@@ -110,6 +110,9 @@
 .footer-soc-name:focus {
   color: #bea69e;
 }
+.footer-form-container {
+  margin-left: auto;
+}
 
 .footer-form {
   display: flex;
@@ -131,7 +134,7 @@
 
 .footer-form-button {
   position: relative;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #1d1d1d;
   color: #fff;
@@ -139,7 +142,7 @@
 }
 
 .footer-last-part {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -204,15 +207,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     padding: 50px 32px 20px 32px;
   }
 
   .footer-frame-section,
   .footer-nav-section,
   .footer-form-container {
-    top: 0;
-    right: 0;
     flex: 1;
     width: 100%;
     height: 100%;
