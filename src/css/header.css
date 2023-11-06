@@ -37,7 +37,6 @@
 
 .header-btn {
   display: none;
-  z-index: 1;
 }
 
 .header-btn-menu {
@@ -87,11 +86,12 @@
   /* opacity: 0; */
   /* visibility: hidden; */
   /* pointer-events: none; */
-  z-index: 5;
+  z-index: 10;
   top: 0;
   left: 0;
   display: flex;
   justify-content: flex-end;
+  overflow: auto;
 }
 
 .is-open {
@@ -107,20 +107,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* justify-content: space-between; */
-  /* background-image: url(../img/header/Rectangle-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom; */
-  z-index: 6;
-  position: relative;
+  z-index: 11;
 }
-/* @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .title {
-    background-image: url(../img/header/Rectangle-mob-2x.jpg);
-  }
-} */
 .header-menu-wrap {
   padding: 20px 20px 0px 20px;
 }
@@ -149,10 +137,13 @@
   font-size: 14px;
   line-height: normal;
   text-transform: uppercase;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-weigh 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link-mob:hover,
 .header-nav-link-mob:focus {
+  font-weight: 700;
+}
+.header-nav-list-mob:first-child .header-nav-link-mob {
   font-weight: 700;
 }
 .header-img {
@@ -212,17 +203,8 @@
 
   .header-menu-item {
     width: 480px;
-    /* background-image: url(../img/header/Rectangle-tab.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom; */
   }
-  /* @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .title {
-      background-image: url(../img/header/Rectangle-tab-2x.jpg);
-    }
-  } */
+
   .header-btn-esc {
   }
 
@@ -231,25 +213,16 @@
   .header-nav-list-mob {
     gap: 28px;
   }
-  /* .header-img-menu {
-    background-size: cover;
-  } */
+
   .header-menu-wrap {
-    padding: 20px 32px 0px 64px;
+    padding: 20px 32px 40px 64px;
   }
   .header-btn-esc {
-    /* margin-right: 32px;
-    width: 40px;
-    height: 40px; */
   }
   .header-nav-menu {
     margin-top: 170px;
-    /* margin-top: 232px;
-    margin-left: 64px; */
   }
   .header-img-menu {
-    /* width: 476px;
-    height: 480px; */
   }
 }
 
