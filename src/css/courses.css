@@ -1,7 +1,5 @@
 /*---------------------------- Section 4 courses ----------------------------*/
-.courses {
-  padding-top: 80px;
-}
+.courses {}
 
 .courses-title {
   font-size: 28px;
@@ -11,28 +9,66 @@
   margin-bottom: 20px;
 }
 
-.courses-title span {
-  color: #BEA69E;
+.courses-text {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
 }
 
-.courses-desc {
-  margin-bottom: 40px;
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.courses-title span {
+  color: #BEA69E;
 }
 
 .course-item {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.20);
   background: linear-gradient(180deg, #060707 0%, #1D1D1D 100%);
+  padding: 28px;
+}
+
+
+.courses-number {
+  color: rgba(255, 255, 255, 0.40);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
 }
 
 .courses-number-wrap {
-  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.courses-wrap-link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1D1D1D;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.courses-wrap-link:hover {
+  background-color: #BEA69E;
 }
 
 .course-name {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
+  margin-bottom: 164px;
 }
 
 .course-descr {
@@ -50,7 +86,43 @@
 
 
 /*---------------------------- Adaptive tablet ----------------------------*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+
+  .courses-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: 0.04em;
+  }
+
+  .courses-title-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .courses-text {
+    max-width: 381px;
+  }
+
+  .course-item {
+    flex-basis: calc((100%-20px) / 2);
+  }
+}
 
 /*---------------------------- Adaptive desktop ----------------------------*/
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+
+  .courses-list {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .course-item {
+    flex-basis: calc((100%-40px) / 3);
+  }
+
+  .courses-text {
+    width: 565px;
+  }
+}
