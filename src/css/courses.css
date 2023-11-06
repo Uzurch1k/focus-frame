@@ -108,6 +108,10 @@
   .course-item {
     flex-basis: calc((100%-20px) / 2);
   }
+
+  .course-name {
+    max-width: 265px;
+  }
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
