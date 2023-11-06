@@ -23,14 +23,14 @@
 
     
     <script type="module" crossorigin src="/focus-frame/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/focus-frame/assets/index-9193d391.css">
+    <link rel="stylesheet" href="/focus-frame/assets/index-bf500696.css">
   </head>
 
   <body>
     <div class="wrap">
       <!-- ViktoriiaYakaba  -->
       <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <div class="header-item">
       <nav class="header-navigation">
         <a href="" class="header-link-logo">
@@ -56,64 +56,61 @@
           </li>
         </ul>
 
-        <a href="#">
-          <svg width="16" height="16">
+        <a href="#" class="header-camera">
+          <svg width="16" height="16" class="header-camera-item">
             <use href="/focus-frame/assets/icons-b0a231ec.svg#icon-header-camera"></use>
           </svg>
         </a>
+        <button class="header-btn-menu" type="button">
+          <svg width="32" height="22" class="header-btn-menu-item hbmi-mob">
+            <use href="/focus-frame/assets/icons-b0a231ec.svg#icon-menu-open"></use>
+          </svg>
+          <svg width="40" height="28" class="header-btn-menu-item hbmi-tab">
+            <use href="/focus-frame/assets/icons-b0a231ec.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </nav>
-      <button class="header-btn-menu" type="button">
-        <svg width="32" height="22" class="header-btn-menu-item">
-          <use href="/focus-frame/assets/icons-b0a231ec.svg#icon-menu-open"></use>
-        </svg>
-      </button>
     </div>
     <button class="header-btn" type="button">Sign up</button>
   </div>
-  <div class="header-menu">
+
+  <div class="header-menu is-open">
     <div class="header-menu-item">
-      <button type="button" class="header-btn-esc">
-        <svg height="32" width="32" class="header-btn-esc-item">
-          <use href="/focus-frame/assets/icons-b0a231ec.svg#icon-menu-close"></use>
-        </svg>
-      </button>
-      <ul class="header-nav-menu">
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">About us</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">Our courses</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">Our mentors</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">Reviews</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">contacts</a>
-        </li>
-      </ul>
+      <div class="header-menu-wrap">
+        <button type="button" class="header-btn-esc">
+          <svg width="32" height="32" class="header-btn-esc-item">
+            <use href="/focus-frame/assets/icons-b0a231ec.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="header-nav-menu">
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">About us</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">Our courses</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">Our mentors</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">Reviews</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">contacts</a>
+          </li>
+        </ul>
+      </div>
       <picture>
         <source
           srcset="/focus-frame/assets/Rectangle-tab-30abc549.jpg 1x, /focus-frame/assets/Rectangle-tab-2x-365a6b61.jpg 2x"
-          width="476"
-          height="480"
           media="(min-width:768px)"
         />
         <source
           srcset="/focus-frame/assets/Rectangle-mob-e7457aec.jpg 1x, /focus-frame/assets/Rectangle-mob-2x-8a62f620.jpg 2x"
-          width="329"
-          height="219"
           media="(min-width:320px)"
         />
-        <img
-          src="/focus-frame/assets/Rectangle-tab-30abc549.jpg"
-          alt="camera"
-          width="476"
-          height="480"
-          class="header-img-menu"
-        />
+        <img src="/focus-frame/assets/Rectangle-mob-e7457aec.jpg" class="header-img" />
       </picture>
     </div>
   </div>
