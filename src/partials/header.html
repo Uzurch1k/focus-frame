@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <div class="header-item">
       <nav class="header-navigation">
         <a href="" class="header-link-logo">
@@ -25,52 +25,57 @@
           </li>
         </ul>
 
-        <a href="#">
-          <svg width="16" height="16">
+        <a href="#" class="header-camera">
+          <svg width="16" height="16" class="header-camera-item">
             <use href="./img/icons.svg#icon-header-camera"></use>
           </svg>
         </a>
+        <button class="header-btn-menu" type="button">
+          <svg width="32" height="22" class="header-btn-menu-item hbmi-mob">
+            <use href="./img/icons.svg#icon-menu-open"></use>
+          </svg>
+          <svg width="40" height="28" class="header-btn-menu-item hbmi-tab">
+            <use href="./img/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </nav>
-      <button class="header-btn-menu" type="button">
-        <svg width="32" height="22" class="header-btn-menu-item">
-          <use href="./img/icons.svg#icon-menu-open"></use>
-        </svg>
-      </button>
     </div>
     <button class="header-btn" type="button">Sign up</button>
   </div>
-  <div class="header-menu">
+
+  <div class="header-menu is-open">
     <div class="header-menu-item">
-      <button type="button" class="header-btn-esc">
-        <svg height="32" width="32" class="header-btn-esc-item">
-          <use href="./img/icons.svg#icon-menu-close"></use>
-        </svg>
-      </button>
-      <ul class="header-nav-menu">
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">About us</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">Our courses</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">Our mentors</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">Reviews</a>
-        </li>
-        <li class="header-nav-list-mob">
-          <a href="#" class="header-nav-link-mob">contacts</a>
-        </li>
-      </ul>
+      <div class="header-menu-wrap">
+        <button type="button" class="header-btn-esc">
+          <svg width="32" height="32" class="header-btn-esc-item">
+            <use href="./img/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="header-nav-menu">
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">About us</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">Our courses</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">Our mentors</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">Reviews</a>
+          </li>
+          <li class="header-nav-list-mob">
+            <a href="#" class="header-nav-link-mob">contacts</a>
+          </li>
+        </ul>
+      </div>
       <picture>
         <source
           srcset="
             ./img/header/Rectangle-tab.jpg    1x,
             ./img/header/Rectangle-tab-2x.jpg 2x
           "
-          width="476"
-          height="480"
           media="(min-width:768px)"
         />
         <source
@@ -78,17 +83,9 @@
             ./img/header/Rectangle-mob.jpg    1x,
             ./img/header/Rectangle-mob-2x.jpg 2x
           "
-          width="329"
-          height="219"
           media="(min-width:320px)"
         />
-        <img
-          src="./img/header/Rectangle-tab.jpg"
-          alt="camera"
-          width="476"
-          height="480"
-          class="header-img-menu"
-        />
+        <img src="./img/header/Rectangle-mob.jpg" class="header-img" />
       </picture>
     </div>
   </div>
