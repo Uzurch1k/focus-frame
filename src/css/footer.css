@@ -1,6 +1,16 @@
 /*---------------------------- Footer ----------------------------*/
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-image: url(/img/footer/footer-mob-1.png);
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(/img/footer/footer-mob-2.png);
+  }
 }
 
 .footer-wrap {
@@ -12,8 +22,6 @@
 }
 
 .footer > .container {
-  display: flex;
-  flex-direction: column;
   padding-top: 40px;
   padding-bottom: 20px;
 }
@@ -53,18 +61,6 @@
   display: flex;
   gap: 40px;
   margin-bottom: 75px;
-}
-
-.footer-soc-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.footer-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
 }
 
 .footer-soc-name {
@@ -135,41 +131,21 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
+  .footer {
+    background-image: url(/img/footer/footer-tablet-1.png);
+    background-position: center;
+    background-size: contain;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(/img/footer/footer-tablet-2.png);
+    }
+  }
+
   .footer > .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
     padding-top: 50px;
-    padding-bottom: 25px;
-  }
-
-  .footer-frame-section,
-  .footer-nav-section,
-  .footer-form-container {
-    top: 0;
-    right: 0;
-    flex: 1;
-    width: 100%;
-    height: 100%;
-  }
-
-  .footer-address {
-    margin-top: 25px;
-  }
-
-  .footer-nav-secton {
-    gap: 25px;
-  }
-
-  .footer-input {
-    width: 216px;
-    height: 68px;
-    border-radius: 12px;
-  }
-
-  .footer-last-part {
-    flex: 1;
     padding-bottom: 25px;
   }
   .footer-wrap {
@@ -197,21 +173,23 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .footer-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 25px;
-    padding-top: 50px;
+  .footer {
+    background-image: url(/img/footer/footer-dec1280-1.png);
+    background-position: center;
+    background-size: contain;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(/img/footer/footer-dec1280-2.png);
+    }
   }
 
-  .footer-frame-section,
-  .footer-nav-section,
-  .footer-form-container {
-    flex: 1;
-    width: 100%;
-    height: 100%;
+  .footer-wrap {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: flex-start;
   }
 
   .footer-input {
@@ -239,6 +217,19 @@
 
 /*---------------------------- Adaptive desktop (1440px)----------------------------*/
 @media screen and (min-width: 1440px) {
+  .footer {
+    background-image: url(/img/footer/footer-dec1440-1.png);
+    background-position: center;
+    background-size: contain;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(/img/footer/footer-dec1440-2.png);
+    }
+  }
+
   .footer-form-container {
     margin-left: 190px;
   }
