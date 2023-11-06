@@ -23,7 +23,7 @@
 
     
     <script type="module" crossorigin src="/focus-frame/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/focus-frame/assets/index-57c142db.css">
+    <link rel="stylesheet" href="/focus-frame/assets/index-0f08c497.css">
   </head>
 
   <body>
@@ -454,21 +454,31 @@
     </div>
     <div class="sign-img">
       <div class="lens-img-wrap">
-        <img
-          srcset="/focus-frame/assets/lens-1x-35755577.png 1x, /focus-frame/assets/lens-2x-e4520978.png 2x"
-          src="/focus-frame/assets/lens-1x-35755577.png"
-          width="150"
-          height="142"
-          alt="camera lens"
-        />
+        <picture>
+          <source
+            srcset="/focus-frame/assets/lens1440-1x-cd14c571.png 1x, /focus-frame/assets/lens1440-2x-788b6a61.png 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/focus-frame/assets/lens1280-1x-7588d9f1.png 1x, /focus-frame/assets/lens1280-2x-fcd73d4f.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img src="/focus-frame/assets/lens1280-1x-7588d9f1.png" alt="photographer" />
+        </picture>
       </div>
+
       <div class="camera-img-wrap">
-        <img
-          srcset="/focus-frame/assets/sign-camera-1x-0a46131f.png 1x, /focus-frame/assets/sign-camera-2x-1106a867.png 2x"
-          src="/focus-frame/assets/sign-camera-1x-0a46131f.png"
-          width="240"
-          alt="camera"
-        />
+        <picture>
+          <source
+            srcset="/focus-frame/assets/camera1440-1x-696219a5.png 1x, /focus-frame/assets/camera1440-2x-01f6fc45.png 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/focus-frame/assets/camera1280-1x-24212e25.png 1x, /focus-frame/assets/camera1280-2x-3dcf9118.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img src="/focus-frame/assets/camera1280-1x-24212e25.png" alt="photographer" />
+        </picture>
       </div>
     </div>
   </div>
