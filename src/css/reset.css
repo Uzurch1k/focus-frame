@@ -68,6 +68,7 @@ body {
   background-image: url(/img/header-hero/header-hero-mob-1.png);
   background-position: center;
   background-size: contain;
+  background-attachment: fixed;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
