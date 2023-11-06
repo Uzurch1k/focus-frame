@@ -1,9 +1,12 @@
 /*---------------------------- Section 4 courses ----------------------------*/
-.courses {
+.course {
+  padding-bottom: 80px;
 }
+
 .courses-title-wrap {
   margin-bottom: 40px;
 }
+
 .courses-title {
   font-size: 28px;
   font-weight: 500;
@@ -91,6 +94,10 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
+  .course {
+    padding-bottom: 100px;
+  }
+
   .courses-title {
     font-size: 48px;
     font-weight: 500;
@@ -132,6 +139,9 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
+  .course {
+    padding-bottom: 150px;
+  }
   .courses-list {
   }
 
