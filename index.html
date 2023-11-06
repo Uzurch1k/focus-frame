@@ -23,7 +23,7 @@
 
     
     <script type="module" crossorigin src="/focus-frame/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/focus-frame/assets/index-efaefec7.css">
+    <link rel="stylesheet" href="/focus-frame/assets/index-57c142db.css">
   </head>
 
   <body>
@@ -424,18 +424,21 @@
         Please use the form below to contact us. Enter your name, email, and
         message and we'll get back to you shortly.
       </p>
-      <form action="" class="sign-form">
+      <form class="sign-form">
         <div class="sign-input-wrap">
           <input
             type="text"
             name="name"
             id="name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
             placeholder="Enter your name"
           />
           <input
             type="email"
             name="email"
             id="email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
             placeholder="Enter your email"
           />
           <textarea name="coment" id="coment" placeholder="Message"></textarea>
@@ -448,6 +451,25 @@
           Promodo to use this information for marketing purposes.
         </p>
       </form>
+    </div>
+    <div class="sign-img">
+      <div class="lens-img-wrap">
+        <img
+          srcset="/focus-frame/assets/lens-1x-35755577.png 1x, /focus-frame/assets/lens-2x-e4520978.png 2x"
+          src="/focus-frame/assets/lens-1x-35755577.png"
+          width="150"
+          height="142"
+          alt="camera lens"
+        />
+      </div>
+      <div class="camera-img-wrap">
+        <img
+          srcset="/focus-frame/assets/sign-camera-1x-0a46131f.png 1x, /focus-frame/assets/sign-camera-2x-1106a867.png 2x"
+          src="/focus-frame/assets/sign-camera-1x-0a46131f.png"
+          width="240"
+          alt="camera"
+        />
+      </div>
     </div>
   </div>
 </section>
