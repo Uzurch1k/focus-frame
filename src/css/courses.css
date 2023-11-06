@@ -1,5 +1,5 @@
 /*---------------------------- Section 4 courses ----------------------------*/
-.course {
+.courses {
   padding-bottom: 80px;
 }
 
@@ -94,7 +94,7 @@
 
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
-  .course {
+  .courses {
     padding-bottom: 100px;
   }
 
@@ -139,7 +139,7 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
-  .course {
+  .courses {
     padding-bottom: 150px;
   }
   .courses-list {
