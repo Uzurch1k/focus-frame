@@ -194,44 +194,47 @@
 
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
+  .sign > .container {
+    display: flex;
+    gap: 60px;
+  }
+
+  .sign-img {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+  }
+
+  .lens-img-wrap {
+    background-color: #bea69e;
+    border-radius: 1000px;
+    width: 180px;
+    height: 288px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .lens-img-wrap img {
+    position: absolute;
+    top: 76px;
+    right: 19px;
+  }
+
+  .camera-img-wrap {
+    background-color: #1d1d1d;
+    border-radius: 1000px;
+    width: 340px;
+    height: 540px;
+    position: relative;
+  }
+
+  .camera-img-wrap img {
+    position: absolute;
+    top: 156px;
+    right: 50px;
+  }
 }
 
-.sign .container {
-  display: flex;
-  gap: 60px;
-}
-
-.sign-img {
-  display: flex;
-  gap: 20px;
-  align-items: baseline;
-}
-
-.lens-img-wrap {
-  background-color: #bea69e;
-  border-radius: 1000px;
-  width: 180px;
-  height: 288px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.lens-img-wrap img {
-  position: absolute;
-  top: 76px;
-  right: 19px;
-}
-
-.camera-img-wrap {
-  background-color: #1d1d1d;
-  border-radius: 1000px;
-  width: 340px;
-  height: 540px;
-  position: relative;
-}
-
-.camera-img-wrap img {
-  position: absolute;
-  top: 156px;
-  right: 50px;
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+@media screen and (min-width: 1440px) {
 }
