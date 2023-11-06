@@ -4,6 +4,7 @@
   background-image: url(/img/footer/footer-mob-1.png);
   background-position: center;
   background-size: contain;
+  background-attachment: fixed;
 }
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
