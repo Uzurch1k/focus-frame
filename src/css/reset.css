@@ -64,6 +64,20 @@ body {
   margin: 0 auto;
 }
 
+.wrap {
+  background-image: url(./img/header-hero/header-hero-mob-1.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .wrap {
+    background-image: url(./img/header-hero/header-hero-mob-2.png);
+  }
+}
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
