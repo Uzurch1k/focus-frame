@@ -23,7 +23,7 @@
 
     
     <script type="module" crossorigin src="/focus-frame/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/focus-frame/assets/index-ca6ffb85.css">
+    <link rel="stylesheet" href="/focus-frame/assets/index-8f4684d3.css">
   </head>
 
   <body>
@@ -439,9 +439,10 @@
               type="text"
               name="name"
               id="name"
-              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              pattern="[A-Za-z\s-]+"
               title="Username must be two words separated by space."
               placeholder="Enter your name"
+              required
             />
           </label>
           <label class="sign-label" for="email">
@@ -449,14 +450,16 @@
               type="email"
               name="email"
               id="email"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               placeholder="Enter your email"
+              required
             />
           </label>
           <label class="sign-label" for="coment">
             <textarea
               name="coment"
               id="coment"
+              pattern="[A-Za-z0-9\s]+"
               placeholder="Message"
             ></textarea>
           </label>
@@ -678,8 +681,10 @@
               id="footer-email"
               name="footer-email"
               type="email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               placeholder="Enter your email"
               class="footer-input"
+              required
             />
           </label>
           <button type="submit" class="footer-form-button">Go</button>
