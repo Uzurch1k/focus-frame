@@ -1,6 +1,6 @@
 /*---------------------------- Section 5 mentors ----------------------------*/
 .mentors {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .mentors-header {
@@ -49,7 +49,7 @@
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .mentors {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   .mentors-header {
@@ -80,6 +80,6 @@
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
   .mentors {
-    padding-bottom: 150px;
+    padding-top: 150px;
   }
 }

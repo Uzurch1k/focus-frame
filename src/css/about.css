@@ -1,5 +1,5 @@
 .about {
-  padding: 80px 0px;
+  padding-top: 80px;
 }
 .about-h2 {
   font-size: 28px;
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    padding: 100px 0px;
+    padding-top: 100px;
   }
 
   .about-h2 {
@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 1280px) {
   .about {
-    padding: 150px 0px;
+    padding-top: 150px;
   }
 
   .about-wrap-desktop {

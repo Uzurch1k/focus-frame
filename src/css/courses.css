@@ -1,6 +1,6 @@
 /*---------------------------- Section 4 courses ----------------------------*/
 .courses {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .courses-title-wrap {
@@ -99,7 +99,7 @@
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .courses {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   .courses-title {
@@ -144,7 +144,7 @@
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
   .courses {
-    padding-bottom: 150px;
+    padding-top: 150px;
   }
   .courses-list {
   }

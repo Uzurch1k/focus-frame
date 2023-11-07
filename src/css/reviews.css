@@ -1,6 +1,6 @@
 /*---------------------------- Section 7 reviews ----------------------------*/
 .reviews {
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 .reviews-header {
@@ -22,7 +22,6 @@
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
-  /* width: calc((100% - 20px) / 2); */
   width: 100%;
 }
 
@@ -75,7 +74,7 @@
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
 
   .reviews-header {
@@ -100,7 +99,7 @@
 /*---------------------------- Adaptive desktop ----------------------------*/
 @media screen and (min-width: 1280px) {
   .reviews {
-    padding-bottom: 150px;
+    padding: 150px 0;
   }
 
   .reviews-foto-name {

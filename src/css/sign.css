@@ -1,6 +1,6 @@
 /*---------------------------- Section 6 sign ----------------------------*/
 .sign {
-  padding: 0px 0px 80px;
+  padding-top: 80px;
 }
 
 .sign-title {
@@ -149,7 +149,7 @@
 /*---------------------------- Adaptive tablet ----------------------------*/
 @media screen and (min-width: 768px) {
   .sign {
-    padding: 0px 0px 100px;
+    padding-top: 100px;
   }
 
   .sign-wrap {
@@ -212,7 +212,7 @@
     justify-content: space-between;
   }
   .sign {
-    padding: 0px 0px 150px;
+    padding-top: 150px;
   }
 
   .sign-img {
