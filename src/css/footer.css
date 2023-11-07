@@ -51,11 +51,22 @@
 }
 
 .footer-phone-contacts:hover,
-.footer-phone-contacts:focus {
+.footer-phone-contacts:focus,
+.footer-phone-contacts:active {
   color: #bea69e;
 }
 
 .footer-country {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.28;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-country:hover,
+.footer-country:focus,
+.footer-country:active {
+  color: #bea69e;
 }
 
 .footer-nav-section {
@@ -108,7 +119,7 @@
 }
 
 .footer-form-button {
-	padding: 0;
+  padding: 0;
   width: 60px;
   height: 60px;
   border: none;
