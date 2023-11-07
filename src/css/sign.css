@@ -116,7 +116,8 @@
 }
 
 .sign-button:hover,
-.sign-button:focus {
+.sign-button:focus,
+.sign-button:active {
   background-color: #1d1d1d;
   color: #bea69e;
 }
@@ -136,7 +137,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sign-link:hover,
-.sign-link:focus {
+.sign-link:focus,
+.sign-link:active {
   color: #bea69e;
   text-decoration-line: underline;
 }

@@ -85,7 +85,8 @@
 }
 
 .footer-soc-name:hover,
-.footer-soc-name:focus {
+.footer-soc-name:focus,
+.footer-soc-name:active {
   color: #bea69e;
 }
 .footer-form-container {

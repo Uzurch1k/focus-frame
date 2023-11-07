@@ -154,7 +154,8 @@
   transition: font-weigh 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link-mob:hover,
-.header-nav-link-mob:focus {
+.header-nav-link-mob:focus,
+.header-nav-link-mob:active {
   font-weight: 700;
 }
 .header-nav-list-mob:first-child .header-nav-link-mob {
@@ -270,7 +271,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-nav-link:hover,
-  .header-nav-link:focus {
+  .header-nav-link:focus,
+  .header-nav-link:active {
     color: rgba(190, 166, 158, 1);
   }
 
