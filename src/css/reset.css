@@ -49,6 +49,10 @@ img {
 }
 
 /*----------------------------Other----------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;

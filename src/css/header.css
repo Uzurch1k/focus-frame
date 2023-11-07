@@ -68,8 +68,10 @@
   fill: rgba(190, 166, 158, 0.4);
   transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-camera-item:hover,
-.header-camera-item:focus {
+
+.header-camera:hover .header-camera-item,
+.header-camera:focus .header-camera-item,
+.header-camera:active .header-camera-item {
   fill: rgba(190, 166, 158, 1);
 }
 
@@ -177,24 +179,25 @@
   }
 
   .header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #121212;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.55;
     text-transform: uppercase;
     border-radius: 12px;
-    border: none;
     background: #fff;
-    display: block;
-    cursor: pointer;
     width: 186px;
     height: 60px;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-btn:hover,
-  .header-btn:focus {
+  .header-btn:focus,
+  .header-btn:active {
     color: rgba(190, 166, 158, 1);
     background-color: rgba(29, 29, 29, 1);
   }
