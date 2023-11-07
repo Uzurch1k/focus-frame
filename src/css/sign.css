@@ -229,6 +229,12 @@
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
+    transform: translateY(0px);
+    animation-name: signLens;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
 
   .lens-img-wrap img {
@@ -238,12 +244,29 @@
     transform: scale(1.2);
   }
 
+  @keyframes signLens {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
   .camera-img-wrap {
     background-color: #1d1d1d;
     border-radius: 1000px;
     width: 340px;
     height: 540px;
     position: relative;
+    transform: translateY(0px);
+    animation-name: signCamera;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
 
   .camera-img-wrap img {
@@ -251,6 +274,18 @@
     top: 156px;
     right: 50%;
     transform: translateX(50%);
+  }
+}
+
+@keyframes signCamera {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 

@@ -165,9 +165,6 @@
 .header-nav-link-mob:active {
   font-weight: 700;
 }
-.header-nav-list-mob:first-child .header-nav-link-mob {
-  font-weight: 700;
-}
 .header-img {
 }
 
