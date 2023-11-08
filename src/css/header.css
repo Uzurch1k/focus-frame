@@ -196,6 +196,8 @@
   }
 
   .header-btn {
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,6 +219,35 @@
   .header-btn:active {
     color: rgba(190, 166, 158, 1);
     background-color: rgba(29, 29, 29, 1);
+  }
+
+  .header-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(31, 31, 31, 0.378),
+      rgba(161, 161, 161, 0.634) 5%,
+      rgba(255, 255, 255, 0)
+    );
+    transform: rotateZ(60deg) translate(-5em, 11em);
+  }
+
+  .header-btn::after {
+    animation-name: sheen;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes sheen {
+    100% {
+      transform: rotateZ(60deg) translate(1em, -11em);
+    }
   }
 
   .header-camera {
