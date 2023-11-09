@@ -304,6 +304,7 @@
     gap: 28px;
   }
   .header-nav-link {
+    padding: 18px 0;
     color: #fff;
     font-size: 14px;
     line-height: normal;
