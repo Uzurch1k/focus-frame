@@ -19,7 +19,7 @@ This project was developed in a team.
 
 4. Діана Кірієнко (@DianaKiriienko) - Advertisment (!Scrum master)
 
-5.Svitlana Kostiuk (@Svitlana923) - About
+5. Svitlana Kostiuk (@Svitlana923) - About
 
 6. Вика Гулька (@viktoriiahlk) - Courses
 
